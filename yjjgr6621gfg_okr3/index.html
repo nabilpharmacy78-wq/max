@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#211719">
+<title>أول سنة لينا يا نونو ❤️</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600&display=swap');
+:root{--ink:#251c1e;--cream:#f5eee8;--rose:#8d414c;--wine:#321e23;--gold:#d7b77e}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#171214;color:var(--ink);font-family:Cairo,system-ui,sans-serif;overflow-x:hidden}
+.page{width:min(760px,100%);margin:auto;background:var(--cream);box-shadow:0 0 100px #0008;min-height:100vh;position:relative}
+#grain{position:fixed;inset:0;pointer-events:none;z-index:90;opacity:.075;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E")}
+.hero{height:100svh;min-height:640px;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 35%,#613841 0,#2e2024 43%,#120f11 100%);color:#fff}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;filter:blur(2px);opacity:.45}.hero:before{width:430px;height:430px;background:#b65b6d18;animation:breath 6s ease-in-out infinite}.hero:after{width:160px;height:160px;background:#e0bd8730;top:20%;left:25%;filter:blur(35px);animation:drift 9s ease-in-out infinite}
+.hero-inner{position:relative;z-index:2;padding:25px}.date{font-size:11px;letter-spacing:2.8px;color:#eadbd2;margin-bottom:24px}.eyebrow{font-size:12px;color:#d8bbb7;margin-bottom:12px}h1{font-size:clamp(39px,10vw,70px);line-height:1.1;margin:0;font-weight:800;text-shadow:0 8px 40px #0008}.hero p{font-size:17px;color:#d9c8c3;margin:17px 0 0}.scroll{margin-top:54px;font-size:12px;color:#cbbab6}.scroll i{display:block;width:1px;height:42px;background:#fff5;margin:11px auto 0;animation:bob 1.8s infinite}
+.story{padding:84px 20px 20px}.card{opacity:0;transform:translateY(44px) scale(.985);transition:opacity .9s ease,transform 1s cubic-bezier(.2,.8,.2,1);margin-bottom:82px}.card.show{opacity:1;transform:none}.photo-wrap{position:relative;border-radius:20px;overflow:hidden;background:#ddd;box-shadow:0 26px 65px #3b222522}.photo-wrap:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 65%,#1a0e1228);pointer-events:none}.photo{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;transition:transform 1.4s cubic-bezier(.2,.8,.2,1),filter 1.4s}.card:hover .photo{transform:scale(1.035);filter:saturate(1.04)}.copy{padding:23px 7px 0}.kicker{font-size:11px;letter-spacing:1.5px;color:var(--rose);font-weight:800}.copy h2{font-size:28px;line-height:1.35;margin:8px 0 10px}.copy p{font-size:15px;line-height:2.15;margin:0;color:#5b4d4d}
+.rose{padding:88px 25px;text-align:center;background:linear-gradient(145deg,#9b4b58,#73343f);color:#fff;position:relative;overflow:hidden}.rose:before,.rose:after{content:'♥';position:absolute;color:#fff0b;font-size:170px;animation:float 8s ease-in-out infinite}.rose:before{right:-35px;bottom:-70px}.rose:after{left:-40px;top:-100px;animation-delay:-4s}.rose h2{font-size:32px;margin:7px 0 13px}.rose p{font-size:15px;line-height:2;color:#f8e9e4}.rose .card{margin:0}
+.quote{padding:65px 30px;text-align:center;background:#21181b;color:#f6eae6}.quote p{font-size:22px;line-height:1.9;margin:0}.quote small{display:block;color:#c9ada9;margin-top:18px}
+.final{min-height:100svh;display:grid;place-items:center;text-align:center;padding:80px 25px;background:linear-gradient(#f6eee8,#e6d2ca);position:relative;overflow:hidden}.final-inner{position:relative;z-index:2}.final .kicker{color:#8d414c}.final h2{font-size:clamp(34px,9vw,55px);line-height:1.25;margin:10px 0}.final p{color:#655558;line-height:2;font-size:15px}.signature{font-family:'Playfair Display',serif;font-size:24px;margin-top:36px}.final-heart{font-size:46px;display:block;margin:20px auto;animation:heartBeat 1.5s ease-in-out infinite}
+.music{position:fixed;z-index:100;left:18px;bottom:18px;width:56px;height:56px;border:1px solid #ffffff22;border-radius:50%;background:#241b1e;color:#fff;box-shadow:0 16px 35px #0005;cursor:pointer;font-size:20px;transition:.3s}.music.on{background:var(--rose);animation:ring 1.8s infinite}.hint{position:fixed;z-index:99;left:84px;bottom:27px;background:#241b1eed;color:#fff;padding:8px 13px;border-radius:20px;font-size:11px;opacity:.9;transition:.5s}.hint.hide{opacity:0;transform:translateX(-15px)}
+.hearts,.sparkles{position:fixed;inset:0;z-index:80;pointer-events:none;overflow:hidden}.heart{position:absolute;bottom:-30px;color:#9d4d59;opacity:0;animation:up linear forwards}.spark{position:absolute;width:4px;height:4px;border-radius:50%;background:#e0bd87;opacity:0;animation:spark 2.8s ease-out forwards}
+.replay{border:0;background:#2a1d21;color:#fff;padding:13px 22px;border-radius:999px;font-family:inherit;cursor:pointer;margin-top:24px;box-shadow:0 12px 30px #0002}.replay:active{transform:scale(.97)}
+@keyframes up{0%{transform:translateY(0) scale(.7) rotate(0);opacity:0}12%{opacity:.48}100%{transform:translateY(-110vh) scale(1.15) rotate(28deg);opacity:0}}@keyframes spark{0%{transform:translateY(0) scale(.2);opacity:0}15%{opacity:.9}100%{transform:translateY(-120px) scale(0);opacity:0}}@keyframes breath{50%{transform:scale(1.13);opacity:.7}}@keyframes drift{50%{transform:translate(70px,35px)}}@keyframes bob{50%{transform:translateY(7px)}}@keyframes float{50%{transform:translateY(-28px) rotate(9deg)}}@keyframes ring{50%{box-shadow:0 0 0 11px #8d414c30}}@keyframes heartBeat{0%,100%{transform:scale(1)}50%{transform:scale(1.13)}}
+@media(max-width:520px){.story{padding-left:16px;padding-right:16px}.copy h2{font-size:25px}.quote p{font-size:19px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div id="grain"></div>
+<div class="page">
+<section class="hero">
+<div class="hero-inner"><div class="date">29.09.2026 · MAX & NONO</div><div class="eyebrow">سنة كاملة… ولسه البداية</div><h1>أول سنة لينا يا نونو</h1><p>عدت… ولا حسيت بيها</p><div class="scroll">انزلي شوية<i></i>♥</div></div>
+</section>
+<section class="story">
+<article class="card"><div class="photo-wrap"><img class="photo" src="https://framerusercontent.com/images/zoaI5SyemtdsQ9Se6Ff8Fth8.jpg?height=4000&width=3000" alt="ذكرى" loading="eager"></div><div class="copy"><div class="kicker">01 — حب صادق</div><h2>بداية كانت مختلفة</h2><p>اول سنة حب صادق خالي من الاخوه، بعيدا عن الست سنين الي فاتو. عايزك تعرفي يا نونو اني بحبك اوي اوي.</p></div></article>
+<article class="card"><div class="photo-wrap"><img class="photo" src="https://framerusercontent.com/images/Iw8XH7fP0BDzQ5byI8lc5SOdCs8.jpg?height=4000&width=3000" alt="ذكرى" loading="lazy"></div><div class="copy"><div class="kicker">02 — تفاصيلك</div><h2>عيونك… والباقي حكاية</h2><p>هفضل بحبك و اكتشف فيكي حاجات تدوبني فيكي اكتر. و مهما اتكلمت عن قد اية عيونك حلوة، مش هقدر أوصفها.</p></div></article>
+</section>
+<section class="rose"><article class="card"><div class="kicker" style="color:#f1d3ca">03 — جمالك</div><h2>لو دافنشي شافك…</h2><p>شفايفك الي دافنشي ميعرفش يرسمهم، و مناخيرك الي ولا مناخير الهة الجمال الاغريق. وشعرك الغجري الكيرلي الي كل ستايل عليه بيجنني.</p></article></section>
+<section class="story">
+<article class="card"><div class="photo-wrap"><img class="photo" src="https://framerusercontent.com/images/KFidadvz1sxH4dbjeYXMCthSRc.jpg?height=4032&width=3024" alt="ذكرى" loading="lazy"></div></article>
+<article class="card"><div class="photo-wrap"><img class="photo" src="https://framerusercontent.com/images/tZYmcT9GWAJY9UrkWIHClNQKAGM.jpg?height=4000&width=3000" alt="ذكرى" loading="lazy"></div><div class="copy"><div class="kicker">04 — روحك</div><h2>أجمل حاجة فيكي من جوا</h2><p>مش هعرف اشبه حلاوتك وجمالك من جوا يا ليا. قلبك الحلو ده وطيبتك والعسل الي انتي فيه ده ملوش زي.</p></div></article>
+</section>
+<section class="quote"><p>“ربنا يخليكي ليا يا قمري… وتفضلي معايا على طوووول.”</p><small>— Max</small></section>
+<section class="story" style="padding-top:80px">
+<article class="card"><div class="photo-wrap"><img class="photo" src="https://framerusercontent.com/images/rTIyA1P4aRQx174APsVvRwbkfU.jpg?height=4032&width=3024" alt="ذكرى" loading="lazy"></div></article>
+<article class="card"><div class="photo-wrap"><img class="photo" src="https://framerusercontent.com/images/Goy7mG5Qjfrq4koFxCfRohxbyA.jpg?height=4000&width=3000" alt="ذكرى" loading="lazy"></div><div class="copy"><div class="kicker">05 — دايمًا</div><h2>كل سنة وإنتِ معايا</h2><p>مهما عدت السنين هنفضل سوا.</p></div></article>
+</section>
+<section class="final" id="final"><div class="final-inner"><div class="kicker">من Max إلى نونو · 29.09.2026</div><span class="final-heart">♥</span><h2>كل سنة وإنتِ معايا</h2><p>وكل سنة وإحنا بنكتب حكاية جديدة سوا.<br>ودي أول سنة من سنين كتير جاية.</p><div class="signature">Love, Max</div><button class="replay" id="replay">نرجع من الأول؟ ↺</button></div></section>
+</div>
+<button id="musicBtn" class="music" aria-label="تشغيل الموسيقى">🎵</button><div id="hint" class="hint">اضغطي 🎵 لتشغيل الأغنية</div><div id="hearts" class="hearts"></div><div id="sparkles" class="sparkles"></div>
+<audio id="music" src="assets/music.mp3" loop preload="auto"></audio>
+<script>
+const cards=[...document.querySelectorAll('.card')];const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});cards.forEach(x=>io.observe(x));
+const hearts=document.getElementById('hearts');function heart(){const h=document.createElement('span');h.className='heart';h.textContent=Math.random()>.4?'♥':'♡';h.style.left=Math.random()*100+'%';h.style.fontSize=10+Math.random()*16+'px';h.style.animationDuration=5+Math.random()*6+'s';hearts.appendChild(h);setTimeout(()=>h.remove(),12000)}setInterval(heart,850);
+const sparks=document.getElementById('sparkles');function sparkleBurst(){for(let i=0;i<28;i++){const s=document.createElement('i');s.className='spark';s.style.left=(42+Math.random()*16)+'%';s.style.top=(38+Math.random()*12)+'%';s.style.animationDelay=(Math.random()*.7)+'s';s.style.transform=`translate(${(Math.random()-.5)*120}px,${(Math.random()-.5)*80}px)`;sparks.appendChild(s);setTimeout(()=>s.remove(),3500)}}
+const final=document.getElementById('final');const fio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)sparkleBurst()}),{threshold:.45});fio.observe(final);
+const audio=document.getElementById('music'),btn=document.getElementById('musicBtn'),hint=document.getElementById('hint');
+btn.onclick=async()=>{if(audio.paused){try{await audio.play();btn.textContent='⏸';btn.classList.add('on');hint.classList.add('hide')}catch(e){hint.textContent='اضغطي الزر مرة تانية لتشغيلها'}}else{audio.pause();btn.textContent='🎵';btn.classList.remove('on')}};
+document.getElementById('replay').onclick=()=>window.scrollTo({top:0,behavior:'smooth'});
+</script>
+</body></html>
